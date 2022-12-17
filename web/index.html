@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анализ финансового продукта</title>
+    <script src="eel.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1> Анализ финансового продукта </h1>
+    <hr>
+
+    <form class="form">
+        <div id="pick_products">
+            <input type="radio" class="radio" name="product" id="stocks" value="stocks">
+            <label for="stocks">Акция</label>
+            <input type="radio" class="radio" name="product" id="bonds" value="bonds">
+            <label for="bonds">Облигация</label>
+        </div>
+        <input type='text' id='ticket' placeholder='Ввод тикета'/>
+        <input type='submit' id="analysis" value='Анализ'/>
+    </from>
+
+    <hr>
+    <p class="info_text">Статус: <span id="status"></span></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

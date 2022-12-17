@@ -1,0 +1,101 @@
+* {
+    font-family: "Jost", sans-serif;
+    font-size: 28px;
+}
+
+html {
+    background: 
+		linear-gradient(217deg, #b4e9fd, #dfceff),
+		linear-gradient(127deg, #a6bfff, #C1C8E4),
+		linear-gradient(336deg, #92d5f7, #ccb8f1);	
+}
+
+body {
+    text-align: center;
+    margin: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+hr {
+    width: 80%;
+}
+
+#pick_products {
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+#ticket {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    background: linear-gradient(336deg, #FFF, #7ca1f7);	
+}
+
+#analysis {
+    text-align: center;
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    background: linear-gradient(336deg, #7ca1f7, #FFF);	
+
+}
+
+.radio {
+	display: none;
+}
+
+label {
+	cursor: pointer;
+	margin: 10px 10px;
+}
+
+label:before {
+	content: '';
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: #7ca1f7;
+	border-radius: 50%;
+	z-index: 2;
+	transition: box-shadow .4s ease, background .3s ease;
+}
+
+input:checked + label:before {
+    margin-top: 15px;
+	box-shadow: inset 0px 3px 0 2px #7ca1f7;
+	background: #fff;
+}
